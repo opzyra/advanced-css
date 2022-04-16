@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset/reset.css" />
+    <style>
+      .list li {
+        position: relative;
+        padding-left: 14px;
+      }
+
+      .list li::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: blue;
+      }
+
+      .link {
+        position: relative;
+      }
+
+      .link::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 50%;
+        width: 0%;
+        height: 2px;
+        background: red;
+        transform: translateX(-50%);
+        transition: width ease 0.5s;
+      }
+
+      .link:hover::after {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="list">
+      <li>사과</li>
+      <li>딸기</li>
+      <li>바나나</li>
+    </ul>
+
+    <br />
+    <a class="link" href="http://www.naver.com">네이버로 이동</a>
+  </body>
+</html>

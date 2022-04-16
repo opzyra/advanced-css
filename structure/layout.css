@@ -1,0 +1,23 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#header {
+  height: 120px;
+  background: blue;
+  color: #ffffff;
+}
+
+#main {
+  background: green;
+  color: #ffffff;
+}
+
+#footer {
+  margin-top: auto;
+  background: salmon;
+  color: #ffffff;
+  height: 320px;
+}

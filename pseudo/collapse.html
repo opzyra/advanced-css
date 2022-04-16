@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset/reset.css" />
+    <style>
+      .list .item .content {
+        display: none;
+      }
+
+      .list .item .title:hover + .content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="list">
+      <div class="item">
+        <h1 class="title">자바는 어렵나요?</h1>
+        <div class="content">네 매우 어렵습니다. 마음가짐을 단단히 하세요</div>
+      </div>
+      <div class="item">
+        <h1 class="title">자바스크립트는 어렵나요?</h1>
+        <div class="content">네 쉽습니다 ㅎ</div>
+      </div>
+      <div class="item">
+        <h1 class="title">HTML은 프로그래밍 언어인가요</h1>
+        <div class="content">그런가?</div>
+      </div>
+    </div>
+  </body>
+</html>

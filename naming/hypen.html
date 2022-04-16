@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset/reset.css" />
+  </head>
+  <body>
+    <!--
+      1. 중복 네이밍 주의하기
+        title, list, item, subject, content, date, thumb, image
+        재사용 가능성이 높은 클래스 네이밍의 경우 상위 태그-해당클래스명을 사용한다.
+    -->
+    <div class="user">
+      <div class="user-thumbnail"></div>
+      <div class="user-content">
+        <h4 class="user-name"></h4>
+        <div class="user-description"></div>
+      </div>
+    </div>
+    <!--
+      2. 태그 선택자를 적절히 활용하기
+      .todo-list > li (하위에 ul에 추가로 들어왔을때 중복을 피하기 위해 활용)
+      .board tr th, .board tr td
+    -->
+    <ul class="todo-list">
+      <li>밥먹기</li>
+      <li>씻기</li>
+      <li>잠자기</li>
+    </ul>
+    <!--
+      3. 스코프 활용하기 (클래스 중첩)
+      .main .title {
+        color: red;
+      }
+
+      .product-detail .title {
+        color: blue;
+      }
+    -->
+
+    <!-- main 페이지 -->
+    <div id="root">
+      <header></header>
+      <main class="main">
+        <span class="title">메인화면입니다.</span>
+      </main>
+      <footer></footer>
+    </div>
+
+    <!-- 다른 html파일의 상품 페이지 -->
+    <div id="root">
+      <header></header>
+      <main class="product-detail">
+        <span class="title">상품화면입니다.</span>
+      </main>
+      <footer></footer>
+    </div>
+
+    <!--
+      4. 기타 기법 사용하기
+      BEM 기타등등.. 활용하기
+    -->
+  </body>
+</html>

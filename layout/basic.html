@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset/reset.css" />
+    <style>
+      #root {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      #header {
+        height: 120px;
+        background: blue;
+        color: #ffffff;
+      }
+
+      #main {
+        background: green;
+        color: #ffffff;
+      }
+
+      #footer {
+        margin-top: auto;
+        background: salmon;
+        color: #ffffff;
+        height: 320px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 페이지에 필요한 콘텐츠들만 배치한다.-->
+    <div id="root">
+      <header id="header">헤더</header>
+      <main id="main">메인</main>
+      <footer id="footer">푸터</footer>
+    </div>
+    <!-- 모달, 경고창, 등등 다른 레이어-->
+  </body>
+</html>
